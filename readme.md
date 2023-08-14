@@ -1,2 +1,5 @@
-Following Flatiron's school Flask API deployment guide: 
-https://github.com/learn-co-curriculum/python-p4-deploying-flask-api-to-render
+Simple bird api to practice deploying a backend. 
+Hosted through Render at: https://bird-api-4cvx.onrender.com/
+
+'/birds' can see a list of all birds
+'/birds/id' can see an individual bird
