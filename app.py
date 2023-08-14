@@ -1,8 +1,8 @@
 from flask import jsonify, make_response
 from flask_restful import Resource
 
-from config import api
-from models import Bird
+from config import api, app
+from models import db, Bird
 
 class Birds(Resource):
 
@@ -11,3 +11,6 @@ class Birds(Resource):
         return make_response(jsonify(birds), 200)
 
 api.add_resource(Birds, '/birds')
+
+if __name__ == '__main__':
+    app.run(port=5555, debug=True)
